@@ -108,7 +108,7 @@ public class Wall : MonoBehaviour {
         brick.transform.SetParent(parent);
 
         Rigidbody brickRigidbody = brick.AddComponent<Rigidbody>();
-        brickRigidbody.mass = 5.0f;
+        brickRigidbody.mass = 20.0f;
         brickRigidbody.isKinematic = true;
 
         brick.GetComponent<Renderer>().material = brickMaterials[Random.Range(0, brickMaterials.Length)];
